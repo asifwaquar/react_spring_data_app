@@ -35,10 +35,10 @@ variable "ssh_public_key" {
 
 # ACR Name
 
-variable "acr_name" {
-  type        = string
-  description = "ACR name"
-}
+#variable "acr_name" {
+ # type        = string
+ # description = "ACR name"
+#}
 
 
 # Windows Admin Username for k8s worker nodes
