@@ -7,7 +7,7 @@
 variable "location" {
   type = string
   description = "Azure Region where all these resources will be provisioned"
-  default = "Central US"
+  default = "southeastasia"
 }
 
 # Azure Resource Group Name
@@ -32,6 +32,14 @@ variable "ssh_public_key" {
   #default = "~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey.pub"
   description = "This variable defines the SSH Public Key for Linux k8s Worker nodes"  
 }
+
+# ACR Name
+
+variable "acr_name" {
+  type        = string
+  description = "ACR name"
+}
+
 
 # Windows Admin Username for k8s worker nodes
 variable "windows_admin_username" {
