@@ -95,6 +95,8 @@ stages:
                 environmentServiceName: 'terraform-aks-azurerm-svc-con'
                 commandOptions: '-var ssh_public_key=$(sshkey.secureFilePath) -var environment=$(DEV_ENVIRONMENT) -out $(Pipeline.Workspace)/terraform-manifests-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
                 allowTelemetryCollection: false
+                lockID: c7cd8915-a20d-ba83-5e3a-7c723781bb95
+                
             - task: TerraformCLI@0
               displayName: Terraform Apply
               inputs:
