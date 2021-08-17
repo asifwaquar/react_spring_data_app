@@ -36,8 +36,9 @@ variable "ssh_public_key" {
 # ACR Name
 
 variable "acr_name" {
-  type        = string
+  type = string
   description = "ACR name"
+  default = "terraform-acr"
 }
 
 
