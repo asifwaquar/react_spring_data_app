@@ -37,6 +37,7 @@ stages:
           workingDirectory: '$(System.DefaultWorkingDirectory)/infrastructure'
           backendType: 'azurerm'
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
+          ensureBackend: true
           backendAzureRmResourceGroupName: 'terraform-storage-rg'
           backendAzureRmStorageAccountName: 'terraformstateakscluster'
           backendAzureRmContainerName: 'tfstatefiles'
